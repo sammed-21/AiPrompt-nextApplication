@@ -7,6 +7,7 @@
 /* 
   Note: The styles for this gradient grid background is heavily inspired by the creator of this amazing site (https://dub.sh) – all credits go to them! 
 */
+ 
 
 .main {
   width: 100vw;
@@ -14,8 +15,9 @@
   position: fixed;
   display: flex;
   justify-content: center;
-  padding: 120px 24px 160px 24px;
+  /* padding: 120px 24px 160px 24px; */
   pointer-events: none;
+  background-color: rgb(41, 10, 83);
 }
 
 .main:before {
@@ -40,7 +42,7 @@
   filter: invert(1);
 }
 
-.gradient {
+/* .gradient {
   height: fit-content;
   z-index: 3;
   width: 100%;
@@ -50,12 +52,12 @@
       hsla(215, 98%, 61%, 1) 0px,
       transparent 0%
     ),
-    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
-    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
-    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
-    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
-    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
-    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+    radial-gradient(at 97% 21%, rgb(0, 117, 10) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, rgb(137, 0, 14) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, rgb(12, 8, 22) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, rgb(41, 34, 22) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, rgb(5, 47, 145) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, rgb(82, 4, 26) 0px, transparent 50%);
   position: absolute;
   content: "";
   width: 100%;
@@ -63,7 +65,7 @@
   filter: blur(100px) saturate(150%);
   top: 80px;
   opacity: 0.15;
-}
+} */
 
 @media screen and (max-width: 640px) {
   .main {
@@ -74,7 +76,7 @@
 /* Tailwind Styles */
 
 .app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+  @apply relative z-10 w-full flex bg-gray-900 justify-center items-center flex-col     sm:px-16 ;
 }
 
 .black_btn {
