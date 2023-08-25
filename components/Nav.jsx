@@ -5,7 +5,7 @@ import Image from "next/image";
 import logo from "@/public/assets/images/AI_Generated_Image.jpeg";
 import { useEffect, useState } from "react";
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
-
+ 
 const Nav = () => {
   const { data: session } = useSession();
 
@@ -21,7 +21,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className="flex-between w-full mb-16 pt-3">
+    <nav className="flex-between w-full   flex px-5  h-[10vh] items-center justify-between top-3 sticky   rounded-lg z-10 backdrop-filter bg-gray-800 backdrop-blur-xl  bg-opacity-50    ">
       <Link href="/" className="flex gap-2 flex-center rounded-2xl">
         {/* <h1 className="border border-black px-3 py-2 bg-black text-white bg-opacity-50">AiPrompt</h1> */}
         <Image src={logo} width={40} height={40} alt="logo" className="rounded-xl" />
@@ -34,7 +34,7 @@ const Nav = () => {
             <Link href="/create-prompt" className="black_btn">
               Create Post
             </Link>
-            <button type="button" onClick={signOut} className="outline_btn">
+            <button  type="button" onClick={signOut} className="outline_btn">
               SignOut
             </button>
             <Link href="/profile">
